@@ -1,0 +1,6 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+    - name: create docker container
+      shell: docker run -d --name sandy -p 1234:8080 Jssandhya/Allin
